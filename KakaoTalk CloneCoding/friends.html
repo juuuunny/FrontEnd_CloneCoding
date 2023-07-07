@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends - Kakao Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <i class="fa-solid fa-battery-quarter fa-lg"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span
+          ><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a
+        ></span>
+      </div>
+    </header>
+
+    <a id="friends-display-link">
+      <i class="fas fa-info-circle"></i>Friends' Names Display
+      <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
+
+    <main class="main-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="https://avatars.githubusercontent.com/u/138098320?s=48&v=4"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Nicolas</h4>
+            <!--<h6 class="user-component__subtitle">this text whatever</h6>-->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Channel</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+      </div>
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAB/CAMAAADxY+0hAAAAvVBMVEX54AA7HBw6Ghw5GBz84gD/8QD+5QD/6wAsAB3/6AApAB3/7QAvCB3x3QVPPh3/9wCqmxQdAB02ExwmAB6hjxVILx1jUxrPwg8hAB4yDB01EBwYAB/fxwvh0wqjlRQvBB06JB0tDh4AACCViBezphKYjhR/aRhgSxvKuQ5BLR00Gh9bThxxZhkNAB/DuhBJPB7XyguMgBdpXhp7bRk1Hx9TRh3r4Ah8eBlCJh2CdRhGNB67sBAsFh4jDSByXxqOFoGbAAAG2UlEQVRoge1aaXuqOBSWJCwh4hVoZZtYrXRa61KX1la5c///z5oElM0qoNiZD7xP+yit+J495yS0Wg0aNGjQoEGDBg0a/N+BkCQRkYGQ6EWSEPopapm06Nx/+vv5Hqoc8P757yd/TltEvrUQSMb05a43flVUxXEhBIIgAAhdh12/jnt3LxTLNxMBYUz7vYGpuiFvHgC6qjlY9SnGtxABEa078UwDfkOdABqmN+lqpG4JJNGazlTjLPcBhjqbWqJUJzuev5lOKfIIjvk2x3VJgPB8YpZTPWUEczKvJw4wXXlV2UMJvBXFV7Mj8uS5F7BzuN7TtYEoLzrqd8lWDkB9W8jXKI/94aXK700w9C+PAoSX+uXK702gLy8VAMkr80p2DnN1WUlGm/FDDfSC8DDeXCAAo7/O9QncCwRAm48qBe88nI5WVQB5pdRGLwjKqmIaknUdoZfAXJNK2nfrpWcCdCsIgKh3bd7nATxaPgTk57pCP4H7XDoEcNernV4QvG7J1RDR97qtzwHeS3pAXqo3oBcEdVnKA4gObqE+M8CglAFwP5V7MIvDX91MF2y44MxlArNfJgLEYXy7o95n8BUux8DubD9SCWr3tr9T8tiT7fDQrxmzmZ18EAzFYnppHqvvrEkWYvAK2Lf4IibzWErTJ5i8xwIoXVHedKLLhwkVg9Qyos6Le2K8jG+wj/xFpi4LI17J5O4hSG3CfXZYLeCOrXVkFF46HxupJS6TVdxZFjuACLEq5hG/PHUBjP5KZnujtplRpW7M39HYx+64cMaAL7vkLskm+F5YhBF9TMSdbkKzh2YJ3wVDwZ0yHdiPuG6f53fCVV+i6f71sTADsJ+KfsdsMzz+4gQ6f6sAYfbCbcoEtaIvPsXv7viaL2l2OlVMv8gBKffzLwe8g/yVIoADZg5txvSQd/AMvzGmEtd+lxldigMAT/NLT5b/YYRbUvDI9CBP6ml+s83pEX3LNlGh885C+8jPWll+rjle834GLZTT/I8h/WaX6+GMD62Af3OfH/Az/MYbu8A2NLgYPeMk/yKk/yevC7zfFPEf7W1k+FVfauFAF2z2Kvv2Cf6WFhp/d9RFAFjIf1S80/xgwO7Ha4d1EyLTr32KP4ykYJanF4B7Hb/zh5FtWHsAfrPsCmP1JH8Lb49a6BL8X+f8b1uIRb/O3inMAdKLfopf4nEuvuUdAL+K+LXOGf4ouFYzXddnO0ZLTPA9P/ZHJGykcl+Wss4J4NWZ/FNGvIP5K4LEi1X7W34psD2eATgws940VoX15/NM/Yl6aBSBv7PMU/UPhuVXHmXnCPeziF/u55u/hP9YenEHT9V/JZx4cC9TgdR+UQsoLfJZk/DzpG9J4gHcwH11z++FW8EOSNY/m088CKdbI2G2KGxAiH2aH3OTT3oRPthCiBYAcn70shxxbN8TfvCbk0lWOgTM4iFMzi9AMb/DLSp/qkYEZc1sKfdczt+SDg2ane4/ONu+F4rcPy3uwCU/XzUO/ErAIupXrA6LsHBQVdNNpegl/ILCG/70NMOLRrEB7FwFfJQRIp8Ou1tG2EpGM32OEemrHsXoALzQWdOFxG0UdbOA3UrjFQXYZfpvki+b7h9KA5s3vpa2SJUnuLO0+RjCcWAdEAyAwz7t72sIaAcaTTJA2ZaZwdEiX4Ec4ytMY6h+Ken/QfXeZOJA+wCdN1tO+ytu+QC7I0lAY1FqACTTdk4AIfZ51jXg+8OA9IdSd7Sn5bYgEDVvMv8et/MngEd1775wmKOyu+FIG58/ZbkE8Kv8Hpw0r38DxCsx+8UQt3VvQajbErNvAjw5yoGr0J5UOwpBucHlShi7CrtvIaRFu74YhMPidTcPbM3qqgJgZl1wEIUXdj0uMOxL6LkLdnUEYXtX3fh7AWjv+jRUe/Tig1CEt/lmoCKAvb3qFFT07WuOQRzbr1R2joE3U+/SRITedHP1CSzCwfiiI1CgjoNaTqCxNnqtbgLldaRdf/wcgdCK5xFQeVxqlU58zgJZVdZj4Hq7PqnzIZD0DFHADR0brl9qs3yEaKephOKqMv7j09qevDiACvkEMBwDgrjLBtBwFFO3J0+WRqTan76RgtxMCuyPZW/n6p7nzdiv7u56n/2AiuJNnvxh3Vh2HTL0JxnLhGw0yqFtCJGxVL/eB+DMniRQOot9eCU7IbcEWgxT9NBcanXH13lkJnLl3aqvrpSDuIqrn6Eva3+0q5j/0AgCtWNd8zjNZYh3pKD9054PgfvRAZaizn/e9q3Djij0trWX1XLQePFRxjU9zVYZ0ovHcn5d84pWHnhkP7wHP53zCRB92/5nyocC1NrKNGjQoEGDBg0a/Asu3pjmvU77uQAAAABJRU5ErkJggg=="
+            class="user-component__avatar user-component__avatar--sm"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title user-component__title--not-bold">
+              Channel
+            </h4>
+            <!--<h6 class="user-component__subtitle">this text whatever</h6>-->
+          </div>
+        </div>
+        <div class="user-component__column">
+          <div>
+            <span>2</span>
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="fa-solid fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <i class="far fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fa-solid fa-magnifying-glass fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html"
+            ><i class="fa-solid fa-ellipsis fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="splash-screen">
+      <i class="fas fa-comment"></i>
+    </div>
+
+    <div id="no-mobile">
+      <span>Your screen is too big</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/5585cf1fba.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
